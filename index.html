@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ficha tecnica</title>
+    <script src="js/formato.js"></script>
     <style>
         body{
             background-color: aquamarine
@@ -25,11 +26,11 @@
     </style>
 </head>
 <body>
-    <form action="">
+    
     <table>
         <tr>
             <th>FICHA TECNICA</th>
-            <td colspan="2"><img src="logo.jpg" > ></td>
+            <td colspan="2"><img src="logo.jpg"></td>
         
         </tr>
         
@@ -46,25 +47,25 @@
         </tr>
         <tr>
             <th>NOMBRE PRODUCTO</th>
-            <td><input type="text"></td>
+            <td><input type="text" id="nombre" placeholder="NOMBRE DEL PRODUCTO"></td>
         </tr>
         <tr>
             <th>LINEA DE PRODUCCION</th>
             <!-- <td>comercio</td> -->
-            <td><input type="text"></td>
+            <td><input type="text" id="LINEA DE PRODUCCION" placeholder="LINEA DE PRODUCCION"></td>
         </tr>
         <tr>
             <th>VERSIONES ANTERIORES</th>
             <!-- <td>2.0</td> -->
-            <td><input type="text"></td>
+            <td><input type="text" id="VERSIONES ANTERIORES" placeholder="VERSIONES ANTERIORES"></td>
         </tr>
         <tr>
             <th>VERSION ACTUAL</th>
-            <td><input type="text"></td>
+            <td><input type="text" id="VERSION ACTUAL" placeholder="VERSION ACTUAL"></td>
         </tr>
         <tr>
             <th>MODULO  </th>
-            <td><input type="text"></td> 
+            <td><input type="text" id="MODULO" placeholder="MODULO"></td> 
         <tr>
             <th>DESCRIPCION DEL PRODUCTO</th>
             <th>DESCRIPCION GENERAL DEL PRODUCTO</th>
@@ -129,6 +130,9 @@
     
   
     </table>
-</form>
+    <button onclick="comprobar()">Enviar</button> <br>
+    <p id="respuesta"></p>
+
+
 </body>
 </html>
